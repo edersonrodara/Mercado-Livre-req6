@@ -65,7 +65,7 @@ public class TestPurchaseOrder {
         customer.setId(1L);
         customer.setPassword("123456");
         customer.setCpf("111.111.111-01");
-        customer.setEmail("ederson@mercadolivre.com");
+        customer.setEmail("user@mercadolivre.com");
 
         return customer;
     }
@@ -138,7 +138,7 @@ public class TestPurchaseOrder {
     }
 
     @Test
-    @DisplayName("Testa se cadastra com sucesso!")
+    @DisplayName("Testa se cadastra purchase order com sucesso!")
     public void testSuccessfulCreatePurchaseOrder() {
         PurchaseOrderDTO purchaseOrderDTO = createPurchaseOrderDTO();
         PurchaseOrder purchaseOrder = createPurchaseOrder();

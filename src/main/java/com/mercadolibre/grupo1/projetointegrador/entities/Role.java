@@ -9,7 +9,7 @@ import javax.persistence.*;
  * @author Weverton Bruno
  */
 
-@Getter
+@Getter @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity

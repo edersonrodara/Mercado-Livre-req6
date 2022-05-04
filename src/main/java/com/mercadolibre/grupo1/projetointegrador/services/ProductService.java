@@ -77,7 +77,7 @@ public class ProductService {
      * @param seller
      * @return
      */
-    public ProductDTO saveProduct(ProductDTO productDTO, Seller seller) {
+    public ProductDTO createProduct(ProductDTO productDTO, Seller seller) {
         Product product = new Product().builder()
                 .name(productDTO.getName())
                 .volume(productDTO.getVolume())

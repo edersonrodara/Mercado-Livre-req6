@@ -1,7 +1,6 @@
 package com.mercadolibre.grupo1.projetointegrador.controller;
 
 import com.mercadolibre.grupo1.projetointegrador.dtos.ProductDTO;
-import com.mercadolibre.grupo1.projetointegrador.entities.Product;
 import com.mercadolibre.grupo1.projetointegrador.entities.Seller;
 import com.mercadolibre.grupo1.projetointegrador.entities.enums.ProductCategory;
 import com.mercadolibre.grupo1.projetointegrador.services.AuthService;
@@ -49,6 +48,6 @@ public class ProductController {
     @PostMapping
     public ProductDTO createProduct (@Valid @RequestBody ProductDTO productDTO) {
         Seller seller = authService.getPrincipalAs(Seller.class);
-        return productService.saveProduct(productDTO, seller);
+        return productService.createProduct(productDTO, seller);
     }
 }
