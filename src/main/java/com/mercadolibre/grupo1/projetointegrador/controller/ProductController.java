@@ -43,6 +43,7 @@ public class ProductController {
     }
 
     /**
+     * REQ-06
      * @param productDTO
      * @param uriBuilder
      * @return

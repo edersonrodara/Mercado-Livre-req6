@@ -72,6 +72,7 @@ public class ProductService {
     }
 
     /**
+     * REQ-06
      * @author Ederson Rodrigues Araujo
      * @param productDTO
      * @param seller
